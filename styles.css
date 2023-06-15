@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #1b1b1b;
+    height: 100vh;
+}
+.container{
+    height: fit-content;
+    margin-top: 15vh;
+    padding: 2rem;
+    background: rgb(255 255 255 / 80%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(255 255 255 / 20%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255);
+}
+h1{
+    padding-bottom: 1rem;
+}
+form{
+    display: flex;
+    padding-bottom: 1rem;
+}
+input, input:focus-visible{
+    border-radius: .75rem 0 0 .75rem;
+    border: 1px solid grey;
+    padding: 0.5REM 1rem;
+    border-right: 0;
+}
+button {
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: 0 0.75rem 0.75rem 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.2REM 1rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.button {
+  background-color: #374151;
+}
+.button {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.item{
+    padding: 1rem 2.5rem;
+    list-style-type: none;
+    text-align: start;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px 0;
+    position: relative;
+}
+.done-icon{
+    display: block;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    color: #1b1b1b;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1b1b1b;
+}
+.close-icon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 50px;
+    height: 53px;
+    text-align: center;
+    color: #1b1b1b;
+    border-radius: 0 15px 15px 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    background-color: red;
+    color: white;
+    z-index: 10;
+}
