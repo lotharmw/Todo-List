@@ -10,6 +10,7 @@
     text-align: center;
     background-color: #1b1b1b;
     height: 100vh;
+    overflow-y: scroll;
 }
 .container{
     height: fit-content;
@@ -28,12 +29,14 @@ h1{
 form{
     display: flex;
     padding-bottom: 1rem;
+    justify-content: space-between;
 }
 input, input:focus-visible{
     border-radius: .75rem 0 0 .75rem;
     border: 1px solid grey;
     padding: 0.5REM 1rem;
     border-right: 0;
+    width: 100%;
 }
 button {
     background-color: #111827;
@@ -59,16 +62,22 @@ button {
     width: auto;
 }
 
-.button {
-  background-color: #374151;
+.btn-container button {
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.btn-container button:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 .button {
-  box-shadow: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    }
 .item{
-    padding: 1rem 2.5rem;
+    padding: 1rem 3.5rem 1rem 2.5rem;
     list-style-type: none;
     text-align: start;
     background-color: white;
@@ -81,11 +90,16 @@ button {
     position: absolute;
     width: 40px;
     text-align: center;
-    color: #1b1b1b;
+    color: #1b1b1b3d;
+    font-size: 1.5rem;
+    font-weight: 700;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #1b1b1b;
+    cursor: pointer;
+}
+.done-icon:hover{
+    color: #4eb85a;
 }
 .close-icon{
     display: flex;
@@ -107,4 +121,11 @@ button {
     background-color: red;
     color: white;
     z-index: 10;
+}
+
+.check{
+    color: #4eb85a;
+}
+.done{
+    text-decoration: line-through;
 }
